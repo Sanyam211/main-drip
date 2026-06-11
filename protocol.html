@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protocol — DRIP</title>
+<meta name="description" content="The DRIP hydration protocol: manifesto, full spec sheet, how drops work, and FAQ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="crosshair ch-tl">+ PROTOCOL.SYS</div>
+<div class="crosshair ch-tr">SPEC.V2 +</div>
+<div class="crosshair ch-bl">+ PH.7.4</div>
+<div class="crosshair ch-br">RENDER.OK +</div>
+
+<header class="osbar">
+  <a class="logo" href="index.html">DRIP<span>™</span></a>
+  <nav class="navlinks" id="nav">
+    <a href="index.html">Index</a>
+    <a href="drops.html">Drops</a>
+    <a href="protocol.html" class="active">Protocol</a>
+    <a href="acquire.html">Acquire</a>
+  </nav>
+  <div style="display:flex;gap:14px;align-items:center">
+    <a class="btn-acq" href="acquire.html">ACQUIRE</a>
+    <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><i></i></button>
+  </div>
+</header>
+
+<main>
+
+  <div class="pagehead">
+    <div class="tag">PROTOCOL // v2.0.26</div>
+    <h1>THE <span class="hollow">PROTOCOL</span></h1>
+    <p>How water becomes a liquid asset. Manifesto, spec, lifecycle, FAQ.</p>
+  </div>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" id="manifesto" style="padding-top:60px">
+    <div class="wrap reveal">
+      <div class="tag">01 // MANIFESTO</div>
+      <h2>Water didn't change for a century. <em>So we forked it.</em></h2>
+      <p>Every can is a node. Charged with electrolytes, stripped of sugar, sealed in chrome. We don't ship inventory. We release drops. When a drop sells out, it's gone from the chain forever.</p>
+      <p>No restocks. No "back by popular demand." Scarcity isn't a marketing trick here — it's the architecture. Each serial number exists exactly once, printed on exactly one can, owned by exactly one person.</p>
+    </div>
+  </section>
+
+  <!-- SPEC -->
+  <section class="protocol" id="spec" style="padding-top:60px">
+    <div class="wrap reveal">
+      <div class="tag">02 // PROTOCOL SPEC</div>
+      <div class="specgrid">
+        <div class="spec"><span class="idx">A1</span><div class="k">Sugar</div><div class="v">000<small>G</small></div></div>
+        <div class="spec"><span class="idx">A2</span><div class="k">Electrolytes</div><div class="v">480<small>MG</small></div></div>
+        <div class="spec"><span class="idx">B1</span><div class="k">Volume</div><div class="v">355<small>ML</small></div></div>
+        <div class="spec"><span class="idx">B2</span><div class="k">pH Balance</div><div class="v">7.4<small>ALK</small></div></div>
+      </div>
+
+      <div style="margin-top:60px">
+        <div class="tag">02.1 // PAYLOAD BREAKDOWN</div>
+        <table class="datatable">
+          <thead>
+            <tr><th>Component</th><th>Per Can</th><th>Function</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Sodium</td><td><b>220 MG</b></td><td>Fluid balance</td></tr>
+            <tr><td>Potassium</td><td><b>180 MG</b></td><td>Nerve signal throughput</td></tr>
+            <tr><td>Magnesium</td><td><b>80 MG</b></td><td>Muscle recovery</td></tr>
+            <tr><td>Carbonation</td><td><b>3.2 VOL</b></td><td>Texture engine</td></tr>
+            <tr><td>Sugar</td><td><b>0 G</b></td><td>Deprecated</td></tr>
+            <tr><td>Caffeine</td><td><b>0 MG</b></td><td>Not in scope</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFECYCLE -->
+  <section id="lifecycle" style="padding-top:60px">
+    <div class="reveal">
+      <div class="tag">03 // DROP LIFECYCLE</div>
+      <h2 style="font-family:var(--display);font-weight:700;font-size:clamp(28px,4.5vw,56px);line-height:1.05">Mint. Render. Hydrate.</h2>
+      <div class="timeline">
+        <div class="tstep">
+          <div class="num">01</div>
+          <h3>Mint</h3>
+          <p>A drop opens with a fixed supply. You claim a serial from the allowlist queue. One serial, one can, one owner — recorded onchain at claim time.</p>
+        </div>
+        <div class="tstep">
+          <div class="num">02</div>
+          <h3>Render</h3>
+          <p>Your can is filled, charged with 480mg of electrolytes, laser-etched with its serial, and sealed in chrome. Then it ships. Offchain, in a box.</p>
+        </div>
+        <div class="tstep">
+          <div class="num">03</div>
+          <h3>Hydrate</h3>
+          <p>Crack it open. Drinking the can doesn't burn the serial — your claim stays on the chain forever, even after the asset becomes you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section style="padding-top:60px">
+    <div class="reveal">
+      <div class="tag">04 // CHAIN STATE</div>
+      <div class="statstrip">
+        <div class="stat"><div class="v">18,600</div><div class="k">Cans Minted</div></div>
+        <div class="stat"><div class="v">3</div><div class="k">Drops Sold Out</div></div>
+        <div class="stat"><div class="v">0G</div><div class="k">Sugar Shipped</div></div>
+        <div class="stat"><div class="v">100%</div><div class="k">Recyclable Aluminum</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" style="padding-top:60px;padding-bottom:120px">
+    <div class="reveal" style="max-width:760px">
+      <div class="tag">05 // FAQ</div>
+      <details>
+        <summary>Is this actually water?</summary>
+        <div class="a">Yes. Sparkling electrolyte water — 355ml, zero sugar, zero caffeine, pH 7.4. The onchain part is the serial and supply ledger; the can itself is very much offchain and very much drinkable.</div>
+      </details>
+      <details>
+        <summary>Do I need a crypto wallet to buy a can?</summary>
+        <div class="a">No. Email works fine for the allowlist and checkout. If you connect a wallet, your serial gets attributed to your address; otherwise we hold it in custody against your email.</div>
+      </details>
+      <details>
+        <summary>What happens when a drop sells out?</summary>
+        <div class="a">The supply contract for that drop is frozen and the flavor recipe is retired. Sold-out drops never restock. Secondary trading of unopened cans is a community matter — we just guarantee no new supply.</div>
+      </details>
+      <details>
+        <summary>How does shipping work?</summary>
+        <div class="a">Drops ship in cases of 6 or 12 within 14 days of mint close. Currently shipping to most regions; allowlist confirmation email includes the current shipping map for the active drop.</div>
+      </details>
+      <details>
+        <summary>When is the next drop?</summary>
+        <div class="a">ULTRAVIOLET (Neon Berry, 10,000 cans) renders Q3 2026. Allowlist members get a 24-hour head start. After that — STATIC, date and flavor still encrypted.</div>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footgrid">
+    <div class="brand">DRIP<span>™</span>
+      <p>Sparkling electrolyte water engineered like software. Brewed onchain, bottled offchain.</p>
+    </div>
+    <div>
+      <h4>Sitemap</h4>
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="drops.html">Drops</a></li>
+        <li><a href="protocol.html">Protocol</a></li>
+        <li><a href="acquire.html">Acquire</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Protocol</h4>
+      <ul>
+        <li><a href="#manifesto">Manifesto</a></li>
+        <li><a href="#spec">Spec Sheet</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Signal</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/fugsai/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" rel="noopener">X / Twitter</a></li>
+        <li><a href="#" rel="noopener">Discord</a></li>
+        <li><a href="#" rel="noopener">Farcaster</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footbar">
+    <div>DRIP™ HYDRATION PROTOCOL</div>
+    <div>BREWED ONCHAIN · BOTTLED OFFCHAIN · <b>© 2026</b></div>
+    <div>BUILD <b>2.0.26-STABLE</b></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

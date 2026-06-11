@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DRIP — Liquid Asset</title>
+<meta name="description" content="DRIP — sparkling electrolyte water engineered like software. Zero sugar. Finite supply. Built for the onchain generation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="crosshair ch-tl">+ 26.9124° N</div>
+<div class="crosshair ch-tr">75.7873° E +</div>
+<div class="crosshair ch-bl">+ SYS.HYDRATE</div>
+<div class="crosshair ch-br">RENDER.OK +</div>
+
+<canvas id="scene"></canvas>
+
+<header class="osbar">
+  <a class="logo" href="index.html">DRIP<span>™</span></a>
+  <nav class="navlinks" id="nav">
+    <a href="index.html" class="active">Index</a>
+    <a href="drops.html">Drops</a>
+    <a href="protocol.html">Protocol</a>
+    <a href="acquire.html">Acquire</a>
+  </nav>
+  <div style="display:flex;gap:14px;align-items:center">
+    <a class="btn-acq" href="acquire.html">ACQUIRE</a>
+    <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><i></i></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero vh" id="hero">
+    <h1>DR<span class="hollow">IP</span></h1>
+    <p class="sub"><b>LIQUID ASSET.</b> Sparkling electrolyte water engineered like software. Zero sugar. Finite supply. Built for the onchain generation.</p>
+    <div class="cta">
+      <a class="btn-acq" href="acquire.html">JOIN ALLOWLIST</a>
+      <a class="btn-ghost" href="drops.html">VIEW DROPS</a>
+    </div>
+    <div class="coords">
+      OBJ // CAN_001.GLB<br>
+      MAT // CHROME.PBR<br>
+      ROT // AUTO + POINTER
+    </div>
+    <div class="scrollcue">SCROLL TO RENDER ↓</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>DRINK THE FUTURE <em>✦</em> $DRIP</span><span>ZERO SUGAR <em>✦</em> FULL CHARGE</span><span>MINTED, NOT BOTTLED</span><span>LIQUID ASSET <em>✦</em> 12 FL OZ</span>
+      <span>DRINK THE FUTURE <em>✦</em> $DRIP</span><span>ZERO SUGAR <em>✦</em> FULL CHARGE</span><span>MINTED, NOT BOTTLED</span><span>LIQUID ASSET <em>✦</em> 12 FL OZ</span>
+    </div>
+  </div>
+
+  <!-- 01 MANIFESTO -->
+  <section class="manifesto vh" id="manifesto">
+    <div class="wrap reveal">
+      <div class="tag">01 // MANIFESTO</div>
+      <h2>Water didn't change for a century. <em>So we forked it.</em></h2>
+      <p>Every can is a node. Charged with electrolytes, stripped of sugar, sealed in chrome. We don't ship inventory. We release drops. When a drop sells out, it's gone from the chain forever.</p>
+      <div class="more"><a class="btn-ghost" href="protocol.html">READ THE PROTOCOL →</a></div>
+    </div>
+  </section>
+
+  <!-- 02 PROTOCOL -->
+  <section class="protocol vh" id="protocol">
+    <div class="wrap reveal">
+      <div class="tag">02 // PROTOCOL SPEC</div>
+      <div class="specgrid">
+        <div class="spec"><span class="idx">A1</span><div class="k">Sugar</div><div class="v">000<small>G</small></div></div>
+        <div class="spec"><span class="idx">A2</span><div class="k">Electrolytes</div><div class="v">480<small>MG</small></div></div>
+        <div class="spec"><span class="idx">B1</span><div class="k">Volume</div><div class="v">355<small>ML</small></div></div>
+        <div class="spec"><span class="idx">B2</span><div class="k">pH Balance</div><div class="v">7.4<small>ALK</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 DROPS -->
+  <section class="drops vh" id="drops">
+    <div class="reveal">
+      <div class="tag">03 // GENESIS DROPS</div>
+      <h2>THE <span class="hollow">DROPS</span></h2>
+      <div class="cardrow">
+        <div class="card">
+          <span class="badge">● LIVE</span>
+          <div class="swatch sw-chrome" data-id="#0001 / 10000"></div>
+          <h3>CHROME</h3>
+          <div class="row"><span>FLAVOR</span><b>PURE / UNFLAVORED</b></div>
+          <div class="row"><span>MINTED</span><b>7,204 / 10,000</b></div>
+          <div class="bar"><i style="width:72%"></i></div>
+        </div>
+        <div class="card">
+          <span class="badge">● LIVE</span>
+          <div class="swatch sw-glacier" data-id="#0001 / 5000"></div>
+          <h3>GLACIER</h3>
+          <div class="row"><span>FLAVOR</span><b>ARCTIC YUZU</b></div>
+          <div class="row"><span>MINTED</span><b>4,418 / 5,000</b></div>
+          <div class="bar"><i style="width:88%"></i></div>
+        </div>
+        <div class="card">
+          <span class="badge sold">SOLD OUT</span>
+          <div class="swatch sw-obsidian" data-id="#0001 / 1000"></div>
+          <h3>OBSIDIAN</h3>
+          <div class="row"><span>FLAVOR</span><b>BLACK LIME</b></div>
+          <div class="row"><span>MINTED</span><b>SOLD OUT</b></div>
+          <div class="bar"><i style="width:100%"></i></div>
+        </div>
+      </div>
+      <div style="margin-top:40px"><a class="btn-ghost" href="drops.html">FULL ARCHIVE + UPCOMING →</a></div>
+    </div>
+  </section>
+
+  <!-- 04 ACQUIRE -->
+  <section class="acquire vh" id="acquire">
+    <div class="reveal" style="display:flex;flex-direction:column;align-items:center">
+      <div class="tag" style="justify-content:center">04 // ALLOWLIST</div>
+      <h2>GET ON<br>THE <em>LIST</em></h2>
+      <p>Next drop renders Q3 2026 · 10,000 cans · then never again</p>
+      <form class="allowlist" novalidate>
+        <input type="email" placeholder="your@address.eth" aria-label="Email address">
+        <button type="submit">JOIN</button>
+      </form>
+      <div class="note">NO SPAM. ONE PING PER DROP.</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footgrid">
+    <div class="brand">DRIP<span>™</span>
+      <p>Sparkling electrolyte water engineered like software. Brewed onchain, bottled offchain.</p>
+    </div>
+    <div>
+      <h4>Sitemap</h4>
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="drops.html">Drops</a></li>
+        <li><a href="protocol.html">Protocol</a></li>
+        <li><a href="acquire.html">Acquire</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Protocol</h4>
+      <ul>
+        <li><a href="protocol.html#manifesto">Manifesto</a></li>
+        <li><a href="protocol.html#spec">Spec Sheet</a></li>
+        <li><a href="protocol.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Signal</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/fugsai/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" rel="noopener">X / Twitter</a></li>
+        <li><a href="#" rel="noopener">Discord</a></li>
+        <li><a href="#" rel="noopener">Farcaster</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footbar">
+    <div>DRIP™ HYDRATION PROTOCOL</div>
+    <div>BREWED ONCHAIN · BOTTLED OFFCHAIN · <b>© 2026</b></div>
+    <div>BUILD <b>2.0.26-STABLE</b></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

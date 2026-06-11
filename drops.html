@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drops — DRIP</title>
+<meta name="description" content="Genesis drops, archive and upcoming releases. When a drop sells out, it's gone from the chain forever.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="crosshair ch-tl">+ ARCHIVE.SYS</div>
+<div class="crosshair ch-tr">DROPS.IDX +</div>
+<div class="crosshair ch-bl">+ SUPPLY.FINITE</div>
+<div class="crosshair ch-br">RENDER.OK +</div>
+
+<header class="osbar">
+  <a class="logo" href="index.html">DRIP<span>™</span></a>
+  <nav class="navlinks" id="nav">
+    <a href="index.html">Index</a>
+    <a href="drops.html" class="active">Drops</a>
+    <a href="protocol.html">Protocol</a>
+    <a href="acquire.html">Acquire</a>
+  </nav>
+  <div style="display:flex;gap:14px;align-items:center">
+    <a class="btn-acq" href="acquire.html">ACQUIRE</a>
+    <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><i></i></button>
+  </div>
+</header>
+
+<main>
+
+  <div class="pagehead">
+    <div class="tag">DROPS // FULL ARCHIVE</div>
+    <h1>THE <span class="hollow">DROPS</span></h1>
+    <p>Every release is finite. When a drop mints out, the recipe is burned and the can never returns.</p>
+  </div>
+
+  <section class="drops" style="padding-top:30px">
+    <div class="reveal">
+      <div class="filters" role="group" aria-label="Filter drops">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="live">● Live</button>
+        <button data-filter="upcoming">Upcoming</button>
+        <button data-filter="sold">Sold Out</button>
+      </div>
+      <div class="dropcount">RENDERING 7 / 7 DROPS</div>
+
+      <div class="cardrow">
+
+        <div class="card" data-status="live">
+          <span class="badge">● LIVE</span>
+          <div class="swatch sw-chrome" data-id="#0001 / 10000"></div>
+          <h3>CHROME</h3>
+          <div class="row"><span>SERIES</span><b>GENESIS</b></div>
+          <div class="row"><span>FLAVOR</span><b>PURE / UNFLAVORED</b></div>
+          <div class="row"><span>MINTED</span><b>7,204 / 10,000</b></div>
+          <div class="bar"><i style="width:72%"></i></div>
+        </div>
+
+        <div class="card" data-status="live">
+          <span class="badge">● LIVE</span>
+          <div class="swatch sw-glacier" data-id="#0001 / 5000"></div>
+          <h3>GLACIER</h3>
+          <div class="row"><span>SERIES</span><b>GENESIS</b></div>
+          <div class="row"><span>FLAVOR</span><b>ARCTIC YUZU</b></div>
+          <div class="row"><span>MINTED</span><b>4,418 / 5,000</b></div>
+          <div class="bar"><i style="width:88%"></i></div>
+        </div>
+
+        <div class="card" data-status="sold">
+          <span class="badge sold">SOLD OUT</span>
+          <div class="swatch sw-obsidian" data-id="#0001 / 1000"></div>
+          <h3>OBSIDIAN</h3>
+          <div class="row"><span>SERIES</span><b>GENESIS</b></div>
+          <div class="row"><span>FLAVOR</span><b>BLACK LIME</b></div>
+          <div class="row"><span>MINTED</span><b>SOLD OUT</b></div>
+          <div class="bar"><i style="width:100%"></i></div>
+        </div>
+
+        <div class="card" data-status="sold">
+          <span class="badge sold">SOLD OUT</span>
+          <div class="swatch sw-mercury" data-id="#0000 / 2500"></div>
+          <h3>MERCURY</h3>
+          <div class="row"><span>SERIES</span><b>PRE-GENESIS</b></div>
+          <div class="row"><span>FLAVOR</span><b>SILVER GRAPEFRUIT</b></div>
+          <div class="row"><span>MINTED</span><b>SOLD OUT</b></div>
+          <div class="bar"><i style="width:100%"></i></div>
+        </div>
+
+        <div class="card" data-status="sold">
+          <span class="badge sold">SOLD OUT</span>
+          <div class="swatch sw-prototype" data-id="#0000 / 0100"></div>
+          <h3>PROTOTYPE 000</h3>
+          <div class="row"><span>SERIES</span><b>TESTNET</b></div>
+          <div class="row"><span>FLAVOR</span><b>CLASSIFIED</b></div>
+          <div class="row"><span>MINTED</span><b>SOLD OUT</b></div>
+          <div class="bar"><i style="width:100%"></i></div>
+        </div>
+
+        <div class="card" data-status="upcoming">
+          <span class="badge">Q3 2026</span>
+          <div class="swatch sw-ultraviolet" data-id="#0002 / 10000"></div>
+          <h3>ULTRAVIOLET</h3>
+          <div class="row"><span>SERIES</span><b>SEASON 02</b></div>
+          <div class="row"><span>FLAVOR</span><b>NEON BERRY</b></div>
+          <div class="row"><span>MINTED</span><b>NOT YET RENDERED</b></div>
+          <div class="bar"><i style="width:0%"></i></div>
+        </div>
+
+        <div class="card" data-status="upcoming">
+          <span class="badge">TBA</span>
+          <div class="swatch sw-static" data-id="#0003 / ????"></div>
+          <h3>STATIC</h3>
+          <div class="row"><span>SERIES</span><b>SEASON 02</b></div>
+          <div class="row"><span>FLAVOR</span><b>ENCRYPTED</b></div>
+          <div class="row"><span>MINTED</span><b>NOT YET RENDERED</b></div>
+          <div class="bar"><i style="width:0%"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="acquire" style="min-height:0;padding-top:40px">
+    <div class="reveal" style="display:flex;flex-direction:column;align-items:center">
+      <div class="tag" style="justify-content:center">NEXT // ULTRAVIOLET</div>
+      <h2>DON'T MISS<br>THE <em>NEXT ONE</em></h2>
+      <p>Allowlist members get a 24h head start on every drop</p>
+      <form class="allowlist" novalidate>
+        <input type="email" placeholder="your@address.eth" aria-label="Email address">
+        <button type="submit">JOIN</button>
+      </form>
+      <div class="note">NO SPAM. ONE PING PER DROP.</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footgrid">
+    <div class="brand">DRIP<span>™</span>
+      <p>Sparkling electrolyte water engineered like software. Brewed onchain, bottled offchain.</p>
+    </div>
+    <div>
+      <h4>Sitemap</h4>
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="drops.html">Drops</a></li>
+        <li><a href="protocol.html">Protocol</a></li>
+        <li><a href="acquire.html">Acquire</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Protocol</h4>
+      <ul>
+        <li><a href="protocol.html#manifesto">Manifesto</a></li>
+        <li><a href="protocol.html#spec">Spec Sheet</a></li>
+        <li><a href="protocol.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Signal</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/fugsai/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" rel="noopener">X / Twitter</a></li>
+        <li><a href="#" rel="noopener">Discord</a></li>
+        <li><a href="#" rel="noopener">Farcaster</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footbar">
+    <div>DRIP™ HYDRATION PROTOCOL</div>
+    <div>BREWED ONCHAIN · BOTTLED OFFCHAIN · <b>© 2026</b></div>
+    <div>BUILD <b>2.0.26-STABLE</b></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
